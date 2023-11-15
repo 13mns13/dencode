@@ -1,0 +1,55 @@
+.ContentBlock {
+    .content {}
+
+    margin-bottom: 50px;
+}
+
+.ContentItemBlock {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+
+    .item {
+        display: grid;
+        grid-template-columns: 3fr 7fr .2fr;
+        gap: 5px;
+        padding: 10px;
+        border-bottom: 1px solid black;
+        position: relative;
+
+        &:last-child {
+            border-bottom: 1px solid transparent;
+        }
+
+        h4 {
+            margin: 0;
+
+        }
+
+        .copy {
+            font-size: 12px;
+            position: absolute;
+            right: 10px;
+            top:12px;
+
+        }
+
+        svg {
+            cursor: pointer;
+        }
+
+        @media (max-width:1200px) {
+            h4 {
+                font-size: 12px;
+            }
+
+            div {
+                font-size: 12px;
+            }
+        }
+
+        div {
+            word-wrap: break-word;
+            word-break: break-all;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.InputTextArea {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    border: 1px solid transparent;
+
+    textarea {
+        box-sizing: border-box;
+        resize: none;
+        width: 100%;
+        height: calc(10em + 2px);
+        border: 0;
+        background-color: transparent;
+        outline: none;
+        font-size: 14px;
+        transition: all .2s ease-out;
+    }
+
+    &:focus-within {
+        border: 1px solid #000;
+    }
+}
