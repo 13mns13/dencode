@@ -1,27 +1,24 @@
-# React + TypeScript + Vite
+# Проект: Кодирование и Декодирование Исходного Текста
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Описание
 
-Currently, two official plugins are available:
+Данный проект представляет собой набор инструментов для кодирования и декодирования текста, используя различные методы, такие как Base64, Hex, QP-кодирование (Quoted-Printable), HTML-сущности, а также шифр Цезаря. Эти инструменты могут быть полезны для обработки текстовых данных, безопасного хранения информации, или для обучения и экспериментов в области криптографии.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Функциональность
 
-## Expanding the ESLint configuration
+- **Кодирование и декодирование Base64**: Преобразование текста в Base64 и обратно.
+- **Кодирование и декодирование Hex**: Преобразование текста в шестнадцатеричный формат и обратно, поддерживает UTF-8.
+- **Кодирование и декодирование Quoted-Printable (QP)**: Предназначено для кодирования двоичных данных в печатаемые символы ASCII.
+- **HTML Escape и Unescape**: Преобразование специальных символов в HTML-сущности и обратно.
+- **Шифрование и дешифрование шифром Цезаря**: Простое смещение букв алфавита.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Как использовать
 
-- Configure the top-level `parserOptions` property like this:
+1. **Клонирование репозитория**: `git clone https://github.com/13mns13/dencode.git`
+2. **Установка зависимостей**: Если проект использует сторонние библиотеки, укажите, как их установить.
+3. **Запуск**: Описание того, как запустить программу или использовать инструменты.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+## Требования
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Node.js (если проект использует JavaScript и запускается на сервере)
+- Любой современный браузер, если это клиентская часть
